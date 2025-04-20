@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/battle_background">
+
+    <LinearLayout
+        android:id="@+id/selectedLutemonDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageLutemonA"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/default_lutemon"
+                android:contentDescription="Lutemon A" />
+
+            <TextView
+                android:id="@+id/textNameA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lutemon A"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageLutemonB"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/default_lutemon"
+                android:contentDescription="Lutemon B" />
+
+            <TextView
+                android:id="@+id/textNameB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lutemon B"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textSelectedLutemons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected: None"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnSelectLutemons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/base"
+        android:textColor="@color/white"
+        android:text="Select Lutemons from Home" />
+
+    <Button
+        android:id="@+id/btnStartBattle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/base"
+        android:textColor="@color/white"
+        android:text="Start Battle"
+        android:layout_marginTop="8dp" />
+
+    <ScrollView
+        android:id="@+id/scrollViewBattleLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/battle_background_2">
+
+        <TextView
+            android:id="@+id/textBattleLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Battle log will appear here..."
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@color/black"/>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="lutemon_red">#F44336</color>
+    <color name="lutemon_blue">#2196F3</color>
+    <color name="lutemon_green">#4CAF50</color>
+    <color name="lutemon_pink">#ffa1ff</color>
+    <color name="lutemon_yellow">#ffd000</color>
+    <color name="lutemon_gray">#8c8c8c</color>
+    <color name="base">#0e2b29</color>
+    <color name="base2">#d4d4d4</color>
+    <color name="base3">#93b5b3</color>
+</resources>
